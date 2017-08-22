@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.prime.com.tr/ui">
+    <h:head>
+        <title>WEBinovaTI</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../../css/templatePrincipal.css" rel="stylesheet" type="text/css" />
+        <link href="../../css/default.css" rel="stylesheet" type="text/css" />
+        <script src="../../jScript/default.js" ></script>
+        <ui:insert name="head"></ui:insert>
+    </h:head>
+    <h:body onload="urlSite();">
+        <p:tooltip global="true" showEffect="slide" hideEffect="slide" showEffectLength="100" hideEffectLength="1000" />
+        <p:ajaxStatus onstart="statusDialog.show();" onsuccess="statusDialog.hide();"/>
+        <p:dialog modal="true" widgetVar="statusDialog" header="Status"
+                  draggable="false" closable="false">
+            Processando  <p:graphicImage value="../../img/ajaxloadingbar.gif" />
+        </p:dialog>
+        <p:panel id="estrutura">
+            <div id="top" class="ui-panel ui-widget ui-widget-content ui-corner-all">
+                <div id="logo">
+                    <img src="../../img/rio_1.jpg" width="987" height="80" />
+                </div>
+                <div id="disp">
+
+                </div>
+            </div>
+
+            <div id="migalha" class="">
+                <h:form id="validarUsuario">
+                    <ul id="breadCrumb">
+                        <li><a title="Home" href="/system/principal.jsf"><img src="../../img/home.jpg" border="0" width="20" /></a></li>
+                        <li id="migalhaPao"></li>
+                    </ul>
+                    <p:commandLink ajax="true" id="logout"  styleClass="logout" actionListener="#{validaUsuarioAction.logOut}" title="Clique aqui para sair!" >LOGOUT</p:commandLink>
+                </h:form>
+                <div id="logado">
+                    <h4>#{usuarioAction.usuarioSessions.usrNome} - #{usuarioAction.data}</h4>
+                </div>
+            </div>                
+            <p:panel id="corpo">
+                <ui:insert name="corpo">Top</ui:insert>
+            </p:panel>
+            <div id="footer" class="ui-widget ui-widget-header ui-corner-all">
+                <h2>
+                    WebSysTour - todos os direitos reservados - 2011
+                </h2>
+            </div> 
+        </p:panel>
+    </h:body>
+</html>

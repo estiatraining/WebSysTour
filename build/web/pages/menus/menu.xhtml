@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.prime.com.tr/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <ui:composition template="../../templates/principalPages/principalPages.xhtml">
+        <ui:define name="head">
+         
+        </ui:define>
+        <ui:define name="corpo">
+            <p:tabView effect="opacity" effectDuration="normal" style="border: none;">
+                <p:tab title="Pesquisar">
+
+                </p:tab>
+                <p:tab title="Cadastrar">
+                    <p:messages id="msg" />
+                    <h:form id="formCadastro">
+                        <label class="label">Descrição</label>
+                        <p:inputText id="descricaoMenu" value="#{cMenu.bean.menuDescricao}"/>
+                        <br/>
+                        <label class="label">Url</label>
+                        <p:inputText id="urlMenu"/>
+                        <br/>
+                        <label class="label">Menu Pai</label>
+                        <p:selectOneMenu id="paiMenu" value="#{cMenu.bean.menuId}" style="width: 150px;">
+                            <f:selectItem itemValue="0" itemLabel="Selecione" />
+                            <f:selectItems value="#{cMenu.listaBySelect}"/>
+                        </p:selectOneMenu>
+                        <br/>
+                        <label class="label">Nome</label>
+                        <p:inputText id="nomeMenu" value="#{cMenu.bean.menuNome}"/>
+                        <br/>
+                        <label class="label">Ordem</label>
+                        <p:inputText id="ordemMenu" value="#{cMenu.bean.menuOrdem}"/>
+                        <br/>
+                        <label class="label">Status</label>
+                        <p:selectOneMenu id="statusMenu" 
+                                         style="width: 150px;"
+                                         value="#{cMenu.bean.menuSts}">
+                            <f:selectItem itemValue="false" itemLabel="Selecione"/>
+                            <f:selectItem itemValue="true" itemLabel="Ativo"/>
+                            <f:selectItem itemValue="false" itemLabel="Inativo"/>
+                        </p:selectOneMenu>
+                        <br/>
+                        <label class="label">Tipo</label>
+                        <p:selectOneMenu id="tipoMenu" 
+                                         style="width: 150px;"
+                                         value="#{cMenu.bean.menuTipo}">
+                            <f:selectItem itemValue="0" itemLabel="Selecione"/>
+                            <f:selectItem itemValue="AD" itemLabel="Administrador"/>
+                            <f:selectItem itemValue="US" itemLabel="Usuário"/>
+                        </p:selectOneMenu>
+                        <br/>
+                        <p:separator/>
+                        <br/>
+                        <p:commandButton id="salvar" value="salvar" 
+                                         actionListener="#{cMenu.save}"
+                                         update="msg"/>&nbsp;
+                        <p:commandButton id="excluir" value="excluir" action="#{cMenu.delete}"/>&nbsp;
+                        <p:commandButton id="limpar" value="limpar" action="#{cMenu.limpar}"/>&nbsp;
+                        <p:commandButton id="sair" value="sair"/>&nbsp;
+                    </h:form>
+                </p:tab>
+            </p:tabView>
+        </ui:define>
+    </ui:composition>
+</html>
+

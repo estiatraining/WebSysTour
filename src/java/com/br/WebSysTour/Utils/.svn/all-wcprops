@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/websystour/!svn/ver/81/trunk/WebSysTour/src/java/com/br/WebSysTour/Utils
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/websystour/!svn/ver/63/trunk/WebSysTour/src/java/com/br/WebSysTour/Utils/Utils.java
+END
+SessionUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/websystour/!svn/ver/81/trunk/WebSysTour/src/java/com/br/WebSysTour/Utils/SessionUtils.java
+END
+ArquiteturaException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/websystour/!svn/ver/79/trunk/WebSysTour/src/java/com/br/WebSysTour/Utils/ArquiteturaException.java
+END
+EnviaEmail.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/websystour/!svn/ver/63/trunk/WebSysTour/src/java/com/br/WebSysTour/Utils/EnviaEmail.java
+END

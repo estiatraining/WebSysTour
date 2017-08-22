@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/websystour/!svn/ver/93/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao
+END
+FornecedorDaoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/websystour/!svn/ver/88/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/FornecedorDaoBean.java
+END
+UsuarioDaoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/websystour/!svn/ver/92/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/UsuarioDaoBean.java
+END
+MenuDaoLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/websystour/!svn/ver/88/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/MenuDaoLocal.java
+END
+ErroSistemaDaoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/websystour/!svn/ver/80/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/ErroSistemaDaoBean.java
+END
+AcessoDaoLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/websystour/!svn/ver/88/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/AcessoDaoLocal.java
+END
+MenuDaoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/websystour/!svn/ver/88/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/MenuDaoBean.java
+END
+LogDaoLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/websystour/!svn/ver/88/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/LogDaoLocal.java
+END
+AuditoriaDaoLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/websystour/!svn/ver/63/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/AuditoriaDaoLocal.java
+END
+ClienteDaoLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/websystour/!svn/ver/93/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/ClienteDaoLocal.java
+END
+FornecedorDaoLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/websystour/!svn/ver/88/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/FornecedorDaoLocal.java
+END
+UsuarioDaoLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/websystour/!svn/ver/92/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/UsuarioDaoLocal.java
+END
+AcessoDaoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/websystour/!svn/ver/88/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/AcessoDaoBean.java
+END
+LogDaoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/websystour/!svn/ver/88/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/LogDaoBean.java
+END
+AuditoriaDaoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/websystour/!svn/ver/72/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/AuditoriaDaoBean.java
+END
+ErroSistemaDaoLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/websystour/!svn/ver/79/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/ErroSistemaDaoLocal.java
+END
+ClienteDaoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/websystour/!svn/ver/93/trunk/WebSysTour/src/java/com/br/WebSysTour/ServiceDao/ClienteDaoBean.java
+END

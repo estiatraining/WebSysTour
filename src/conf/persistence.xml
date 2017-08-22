@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="WebSoftTurismoPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <non-jta-data-source/>
+    <class>com.br.WebSysTour.Entilies.Acesso</class>
+    <class>com.br.WebSysTour.Entilies.Auditoria</class>
+    <class>com.br.WebSysTour.Entilies.Cargo</class>
+    <class>com.br.WebSysTour.Entilies.Cidade</class>
+    <class>com.br.WebSysTour.Entilies.Cliente</class>
+    <class>com.br.WebSysTour.Entilies.Conta</class>
+    <class>com.br.WebSysTour.Entilies.Departamento</class>
+    <class>com.br.WebSysTour.Entilies.Email</class>
+    <class>com.br.WebSysTour.Entilies.Empresa</class>
+    <class>com.br.WebSysTour.Entilies.Endereco</class>
+    <class>com.br.WebSysTour.Entilies.ErroSistema</class>
+    <class>com.br.WebSysTour.Entilies.Filial</class>
+    <class>com.br.WebSysTour.Entilies.Fornecedor</class>
+    <class>com.br.WebSysTour.Entilies.Funcionario</class>
+    <class>com.br.WebSysTour.Entilies.Log</class>
+    <class>com.br.WebSysTour.Entilies.Menu</class>
+    <class>com.br.WebSysTour.Entilies.Parametro</class>
+    <class>com.br.WebSysTour.Entilies.Telefone</class>
+    <class>com.br.WebSysTour.Entilies.Uf</class>
+    <class>com.br.WebSysTour.Entilies.Usuario</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <validation-mode>NONE</validation-mode>
+    <properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/websystour"/>
+      <property name="javax.persistence.jdbc.password" value="1"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+    </properties>
+  </persistence-unit>
+</persistence>

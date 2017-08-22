@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/websystour/!svn/ver/92/trunk/WebSysTour/web/WEB-INF
+END
+sun-web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/websystour/!svn/ver/63/trunk/WebSysTour/web/WEB-INF/sun-web.xml
+END
+faces-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/websystour/!svn/ver/82/trunk/WebSysTour/web/WEB-INF/faces-config.xml
+END
+beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/websystour/!svn/ver/63/trunk/WebSysTour/web/WEB-INF/beans.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/websystour/!svn/ver/92/trunk/WebSysTour/web/WEB-INF/web.xml
+END
+glassfish-web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/websystour/!svn/ver/63/trunk/WebSysTour/web/WEB-INF/glassfish-web.xml
+END

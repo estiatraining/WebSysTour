@@ -1,0 +1,53 @@
+/* 
+    Document   : index
+    Created on : 09/05/2011, 22:02:51
+    Author     : Destroyer
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+#paginaIndex{
+    background-image: url("../img/nature_0031.jpg");
+    height: 100%;
+    width: 100%;
+}
+#estrutura{
+    display: block;
+    width: 330px;
+    margin: 0 auto;
+    margin-top: 17%;
+}
+.ui-inputfield{
+    width: 170px;
+}
+.confirm{
+    text-align: center;
+}
+label{
+    display: block;
+    float: left;
+}
+.empresa, .usrLogin, .usrSenha{
+    width: 280px;
+}
+.ui-selectonemenu, .ui-selectonemenu-trigger{
+    width: 273px;
+}
+.ui-selectonemenu-label{
+    width: 260px;
+}
+.usrLogin input, .usrSenha input{
+    width: 265px;
+}
+#paginaIndex .ui-panel-title{
+    padding: 3px;
+    letter-spacing: 2px;
+}
+#paginaIndex .ui-panel{
+    display: block;
+    margin: 0 auto;
+}

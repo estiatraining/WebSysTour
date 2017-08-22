@@ -1,0 +1,156 @@
+/* 
+    Document   : index
+    Created on : 11/05/2011, 22:00:09
+    Author     : Destroyer
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url("../img/nature_0011.jpg");
+}
+#estrutura{
+    display: block;
+    width: 1024px;
+    height: 768px;
+    margin: 0 auto;
+    padding: 2px;
+    margin-top: 10px;
+}
+#estrutura #top{
+    width: 100%;
+    height: 80px;
+    margin-left: -3px;
+    margin-bottom: 2px;
+}
+#estrutura #top #logo{
+    width: 100%;
+    height: 100%;
+    display: block;    
+}
+#estrutura #menu{
+    width: 100.8%;
+    height: 28px;
+    margin-left: -3px;
+    margin-bottom: 2px;
+    padding-bottom: 6px;
+}
+#estrutura #menu img{
+    display: block;
+    float: right;
+    margin-right: 2px;
+    margin-top: 5px;
+}
+#estrutura #migalha{
+    width: 100%;
+    height: 15px;
+    margin-left: -3px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    padding-bottom: 6px;
+}
+#estrutura #migalha #breadCrumb{
+    display: block;
+    width: 450px;    
+    text-decoration: none;
+    list-style: none;
+    float: left;
+}
+#estrutura #migalha #breadCrumb li{
+    display: block;
+    float: left;
+    height: 15px;
+    margin: 0 2px 0 2px;
+    font-family: Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    font-size: 15px;
+}
+#estrutura #migalha #breadCrumb li a:hover{
+    color: #6DA6D1;
+    text-decoration: underline;
+}
+#estrutura #migalha #breadCrumb #migalhaPao{
+   display: block;
+   height: 15px;
+   width: 410px;
+}
+#estrutura #migalha #breadCrumb #migalhaPao p{
+    display: block;
+    width: 400px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#estrutura #migalha #logado{
+    display: block;
+    font-family: Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    font-size: 12px;    
+    float: right;
+    margin-right: 15px;
+}
+#estrutura #corpo{
+    width: 100%;
+    height: 580px;
+    margin-left: -3px;
+    margin-bottom: 2px;
+}
+#estrutura #corpo #corpo_content{
+    margin: 0;
+    padding: 0;
+}
+#estrutura #corpo #corpo_content .ui-tabs-nav{
+    height: 30px;
+}
+#estrutura #corpo #corpo_content .ui-tabs-nav li{
+    height: 28px;    
+}
+#estrutura #corpo #corpo_content .ui-tabs-nav li a{
+    margin-top: -5px;
+    font-family: Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    font-size: 16px; 
+    font-weight: normal;
+    font-style: normal;
+}
+#estrutura #footer{
+    width: 100%;
+    height: 30px;
+    margin-left: -3px;
+    margin-bottom: 0;
+    bottom: 0px;
+    width: 100.6%;
+}
+#estrutura #footer h2{
+    display: block;
+    width: 100%;
+    font-family: Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    height: 30px;
+    line-height: 30px;
+}
+.ui-tabs-nav {
+    background: #c2dfef !important;
+}
+.logout{
+    display: block;
+    float: right;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.logout:hover{
+    color: red;
+    text-decoration: underline;
+}

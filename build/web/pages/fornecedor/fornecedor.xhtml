@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.prime.com.tr/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <ui:composition template="../../templates/principalPages/principalPages.xhtml">
+        <ui:define name="head">
+            <link href="../../css/fornecedor.css" rel="stylesheet" type="text/css" />
+            <script type=""  language="javascript" src="../../jScript/fornecedor.js"></script>
+        </ui:define>
+        <ui:define name="corpo">
+            <p:tabView effect="opacity" effectDuration="normal">
+                <p:tab title="Pesquisar">
+
+                </p:tab>
+                <p:tab title="Cadastrar">
+                  <p:messages id="msg" />
+                  <h:form id="formCadastroForncedor">
+                    <label class="nome"   >Nome</label>
+                    <p:inputText id="forNome" value="#{fornecedorAction.bean.forNome}"/>
+                    <br/>
+                    <label class="dtCadastro"  >Data Cadastro</label>
+                    <p:inputText id="forDatacadastro" value="#{fornecedorAction.bean.forDatacadastro}"/>
+                    <br/>
+                    <label class="cnpjCpf"  >Cnpj Cpf</label>
+                    <p:inputText id="forCnpjcpf" value="#{fornecedorAction.bean.forCnpjcpf}"/>
+                    <br/>
+                    <label class="status" >Status</label>
+                    <p:inputText id="forSts" value="#{fornecedorAction.bean.forSts}"/>
+                    <br/>
+                    <label class="tipo"   >Tipo</label>
+                    <p:inputText id="forTipo" value="#{fornecedorAction.bean.forTipo}"/>
+                    <br/>
+                        <p:separator/>
+                    <br/>
+                    <p:commandButton id="salvar" value="salvar"
+                                     actionListener="#{fornecedorAction.save}"
+                                         update="msg"/>&nbsp;
+                    <p:commandButton id="excluir" value="excluir" action="#{fornecedorAction.delete}"/>&nbsp;
+                    <p:commandButton id="limpar" value="limpar" action="#{fornecedorAction.limpar}"/>&nbsp;
+                    <p:commandButton id="sair" value="sair"/>&nbsp;
+                   </h:form>
+                </p:tab>
+            </p:tabView>
+        </ui:define>
+    </ui:composition>
+</html>
+

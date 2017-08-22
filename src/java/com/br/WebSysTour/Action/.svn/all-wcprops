@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/websystour/!svn/ver/95/trunk/WebSysTour/src/java/com/br/WebSysTour/Action
+END
+ClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/websystour/!svn/ver/94/trunk/WebSysTour/src/java/com/br/WebSysTour/Action/ClienteAction.java
+END
+MenuAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/websystour/!svn/ver/94/trunk/WebSysTour/src/java/com/br/WebSysTour/Action/MenuAction.java
+END
+FornecedorAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/websystour/!svn/ver/94/trunk/WebSysTour/src/java/com/br/WebSysTour/Action/FornecedorAction.java
+END
+UsuarioAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/websystour/!svn/ver/95/trunk/WebSysTour/src/java/com/br/WebSysTour/Action/UsuarioAction.java
+END
+ValidaUsuarioAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/websystour/!svn/ver/88/trunk/WebSysTour/src/java/com/br/WebSysTour/Action/ValidaUsuarioAction.java
+END
+CrudAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/websystour/!svn/ver/94/trunk/WebSysTour/src/java/com/br/WebSysTour/Action/CrudAction.java
+END

@@ -1,0 +1,92 @@
+10
+
+dir
+95
+https://subversion.assembla.com/svn/websystour/trunk/WebSysTour/lib
+https://subversion.assembla.com/svn/websystour
+
+
+
+2011-05-27T12:15:58.290813Z
+63
+cleisonferreira
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d4f1afb6-7d19-455a-bb86-14807ebfcecc
+
+Log4j
+dir
+
+PostgreSQLDriver
+dir
+
+Primefaces3.0
+dir
+
+Hibernate3.6_JPA_2.0
+dir
+
+JasperReports
+dir
+
+CopyLibs
+dir
+
+javaee-endorsed-api-6.0
+dir
+
+jsf20
+dir
+
+nblibraries.properties
+file
+
+
+
+
+2011-05-27T17:28:50.518499Z
+cd2311c9975d1fe156e2f522d70eecad
+2011-05-27T12:15:58.290813Z
+63
+cleisonferreira
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3743
+
+junit_4
+dir
+
+jstl11
+dir
+

@@ -1,0 +1,83 @@
+libs.CopyLibs.classpath=\
+    ${base}/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar
+libs.Hibernate3.6_JPA_2.0.classpath=\
+    ${base}/Hibernate3.6_JPA_2.0/antlr-2.7.6.jar;\
+    ${base}/Hibernate3.6_JPA_2.0/commons-collections-3.1.jar;\
+    ${base}/Hibernate3.6_JPA_2.0/dom4j-1.6.1.jar;\
+    ${base}/Hibernate3.6_JPA_2.0/hibernate-jpa-2.0-api-1.0.0.Final.jar;\
+    ${base}/Hibernate3.6_JPA_2.0/hibernate-testing.jar;\
+    ${base}/Hibernate3.6_JPA_2.0/hibernate3.jar;\
+    ${base}/Hibernate3.6_JPA_2.0/javassist-3.12.0.GA.jar;\
+    ${base}/Hibernate3.6_JPA_2.0/jta-1.1.jar;\
+    ${base}/Hibernate3.6_JPA_2.0/slf4j-api-1.6.1.jar
+libs.JasperReports.classpath=\
+    ${base}/JasperReports/commons-beanutils-1.8.0.jar;\
+    ${base}/JasperReports/commons-collections-3.2.1.jar;\
+    ${base}/JasperReports/commons-digester-1.7.jar;\
+    ${base}/JasperReports/commons-logging-1.1.jar;\
+    ${base}/JasperReports/groovy-all-1.5.5.jar;\
+    ${base}/JasperReports/jakarta-bcel-20050813.jar;\
+    ${base}/JasperReports/jaxen-1.1.1.jar;\
+    ${base}/JasperReports/jcommon-1.0.15.jar;\
+    ${base}/JasperReports/jfreechart-1.0.12.jar;\
+    ${base}/JasperReports/jpa.jar;\
+    ${base}/JasperReports/jxl-2.6.jar;\
+    ${base}/JasperReports/png-encoder-1.5.jar;\
+    ${base}/JasperReports/poi-3.2-FINAL-20081019.jar;\
+    ${base}/JasperReports/jasperreports-3.5.2.jar;\
+    ${base}/JasperReports/xalan.jar;\
+    ${base}/JasperReports/xercesImpl.jar;\
+    ${base}/JasperReports/xml-apis.jar;\
+    ${base}/JasperReports/batik-anim.jar;\
+    ${base}/JasperReports/batik-awt-util.jar;\
+    ${base}/JasperReports/batik-bridge.jar;\
+    ${base}/JasperReports/batik-css.jar;\
+    ${base}/JasperReports/batik-dom.jar;\
+    ${base}/JasperReports/batik-ext.jar;\
+    ${base}/JasperReports/batik-gvt.jar;\
+    ${base}/JasperReports/batik-parser.jar;\
+    ${base}/JasperReports/batik-script.jar;\
+    ${base}/JasperReports/batik-svg-dom.jar;\
+    ${base}/JasperReports/batik-svggen.jar;\
+    ${base}/JasperReports/batik-util.jar;\
+    ${base}/JasperReports/batik-xml.jar;\
+    ${base}/JasperReports/iText-2.1.0.jar;\
+    ${base}/JasperReports/rhino-1.7R1.jar;\
+    ${base}/JasperReports/xml-apis-ext.jar;\
+    ${base}/JasperReports/jasperreports-chart-themes-3.5.2.jar;\
+    ${base}/JasperReports/castor-1.2.jar;\
+    ${base}/JasperReports/jasperreports-dejavu-fonts.jar;\
+    ${base}/JasperReports/barbecue-1.5-beta1.jar;\
+    ${base}/JasperReports/barcode4j.jar
+libs.javaee-endorsed-api-6.0.classpath=\
+    ${base}/javaee-endorsed-api-6.0/javax.annotation.jar;\
+    ${base}/javaee-endorsed-api-6.0/jaxb-api-osgi.jar;\
+    ${base}/javaee-endorsed-api-6.0/webservices-api-osgi.jar
+libs.javaee-endorsed-api-6.0.javadoc=\
+    ${base}/javaee-endorsed-api-6.0/javaee6-doc-api.zip
+libs.jsf20.classpath=\
+    ${base}/jsf20/jsf-api.jar;\
+    ${base}/jsf20/jsf-impl.jar
+libs.jsf20.javadoc=\
+    ${base}/jsf20/javaee6-doc-api.zip
+libs.jstl11.classpath=\
+    ${base}/jstl11/standard.jar;\
+    ${base}/jstl11/jstl.jar
+libs.jstl11.javadoc=\
+    ${base}/jstl11/javaee6-doc-api.zip
+libs.junit_4.classpath=\
+    ${base}/junit_4/junit-4.8.2.jar
+libs.junit_4.javadoc=\
+    ${base}/junit_4/junit-4.8.2-api.zip
+libs.junit_4.src=\
+    ${base}/junit_4/junit-4.8.2-src.jar
+libs.Log4j.classpath=\
+    ${base}/Log4j/tomcat-juli.jar
+libs.PostgreSQLDriver.classpath=\
+    ${base}/PostgreSQLDriver/postgresql-8.3-603.jdbc3.jar;\
+    ${base}/PostgreSQLDriver/postgresql-9.0-801.jdbc3.jar;\
+    ${base}/PostgreSQLDriver/postgresql-9.0-801.jdbc4.jar
+libs.Primefaces3.0.classpath=\
+    ${base}/Primefaces3.0/primefaces-3.0.M1.jar
+libs.primeRedmond.classpath=\
+    ${base}/Primefaces3.0/redmond-1.0.1.jar

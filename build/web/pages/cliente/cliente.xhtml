@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.prime.com.tr/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <ui:composition template="../../templates/principalPages/principalPages.xhtml">
+        <ui:define name="head">
+            <link href="../../css/cliente.css" rel="stylesheet" type="text/css" />
+            <script type=""  language="javascript" src="../../jScript/fornecedor.js"></script>
+        </ui:define>
+        <ui:define name="corpo">
+            <p:tabView effect="opacity" effectDuration="normal">
+                <p:tab title="Pesquisar">
+                    
+                </p:tab>
+                <p:tab title="Cadastrar">
+                  <p:messages id="msg" />
+                  <h:form id="formCadastroCliente">
+                      <h:panelGrid columns="2" style="margin-bottom:20px" cellpadding="2">
+                       <label class="tipoP">Tipo Pessoa</label>
+                       <p:selectOneRadio id="cliTipo" >
+                        <f:selectItem itemValue="F" itemLabel=" Física"/>
+                          <f:selectItem itemValue="J" itemLabel=" Jurídica"/>
+                            </p:selectOneRadio>
+                    <label class="Status">Status</label>
+                    <p:selectOneRadio >
+                        <f:selectItem itemLabel= "Ativo" itemValue="A"  />
+                           <f:selectItem itemLabel= "Inativo" itemValue="I" />
+                            </p:selectOneRadio> 
+                     <label class="nome">Nome</label>
+                     <p:inputText id="cliNome" value="#{clienteAction.bean.cliNome}"/>
+                                  
+                   <label class="dtCadastro">Data de Cadastro</label>
+                   <h:outputText style="font-weight:bold; color: #C2DFEF;" id="cliNome" value="#{usuarioAction.data}"/>
+
+                    <label class="dtCadastro">Data de Nascimento</label>
+                        <p:inputMask value="#{maskController.date}" mask="99/99/9999"/>
+                    
+                    <label class="cnpjCpf"  >CPF/CNPJ</label>
+                    <p:inputMask value="#{maskController.cnpjCpf}" mask="999.999.999-99"/>
+                    
+                    <label class="cnpjCpf"  >RG</label>
+                    <p:inputText id="cliRg" value="#{clienteAcion.bean.cliRg}"/>
+
+                   <label class="tel">Telefone </label>
+                      <p:inputMask value="#{maskController.phone}" mask="(99) 999-9999"/>
+<!--
+                       
+                   <label class="tel">Telefone</label>
+        <p:growl id="msgs" />
+
+        <p:panel header="Telefone">
+            <h:panelGrid columns="2" id="grid">
+                <h:outputLabel value="Tipo : *" for="txt_title"></h:outputLabel>
+                <p:inputText id="txt_title"
+                                value="#{clienteAction.book.title}" required="true"/>
+
+                <h:outputLabel value="Numero : *" for="txt_author"></h:outputLabel>
+                <p:inputText id="txt_author" required="true"
+                                value="#{clienteAction.book.author}" />
+
+                <p:commandButton value="Voltar" type="reset"/>
+                <p:commandButton value="Adicionar" update="books msgs @parent"
+                                action="#{clienteAction.reinit}" >
+                    <p:collector value="#{clienteAction.book}"
+                                addTo="#{clienteAction.books}" />
+                </p:commandButton>
+            </h:panelGrid>
+        </p:panel>
+<br/>
+        <p:outputPanel id="books">
+            <p:dataTable value="#{clienteAction.books}" var="book">
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Tipo" />
+                    </f:facet>
+                    <h:outputText value="#{book.titulo}" />
+                </p:column>
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Numero" />
+                    </f:facet>
+                    <h:outputText value="#{book.numero}" />
+                </p:column>
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Operação" />
+                    </f:facet>
+                    <p:commandLink value="Remover" update="form:books" process="@this">
+                        <p:collector value="#{book}"
+                                     removeFrom="#{clienteAction.books}" />
+                    </p:commandLink>
+                </p:column>
+
+            </p:dataTable>
+        </p:outputPanel>
+-->
+                    <label class="endereco"   >Endereço</label>
+                    <p:inputText id="cliEndereco" value="#{clienteAction.bean.cliEndereco}"/>
+                    <label class="obs" >Observação</label>
+                    <p:inputTextarea style="width:300px;height:100px;" effectDuration="400" />
+                    
+                      </h:panelGrid>
+                        <p:separator/>
+                    
+                    <p:commandButton id="salvar" value="salvar"
+                                     actionListener="#{clienteAction.save}"
+                                         update="msg"/>&nbsp;
+                    <p:commandButton id="excluir" value="excluir" action="#{clienteAction.delete}"/>&nbsp;
+                    <p:commandButton id="limpar" value="limpar" action="#{clienteAction.limpar}"/>&nbsp;
+                    <p:commandButton id="sair" value="sair"/>&nbsp;
+                   </h:form>
+                </p:tab>
+            </p:tabView>
+        </ui:define>
+    </ui:composition>
+</html>
+

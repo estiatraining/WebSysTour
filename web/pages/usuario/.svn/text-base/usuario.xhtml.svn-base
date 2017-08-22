@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.prime.com.tr/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <ui:composition template="../../templates/principalPages/principalPages.xhtml">
+        <ui:define name="head">
+            <link href="../../css/usuario.css" rel="stylesheet" type="text/css" />
+            <script language="javascript" src="../../jScript/usuario.js"></script>            
+        </ui:define>
+        <ui:define name="corpo">
+            <h:form id="alertas" >
+                <p:confirmDialog message="Você confirma a exclusão deste item?" showEffect="bounce" hideEffect="explode" header="Atenção" severity="alert" widgetVar="confirmation" >
+                    <p:commandButton value="Sim" update="dados" oncomplete="confirmation.hide()" actionListener="#{usuarioAction.delete}" />
+                    <p:commandButton value="Não" onclick="confirmation.hide()" type="button" />
+                </p:confirmDialog>
+                <p:dialog  header="Atenção" id="confirm" styleClass="confirm" widgetVar="dlg" modal="true" showEffect="bounce" hideEffect="explode"  >
+                    <p:messages autoUpdate="true" id="messages" />
+                    <p:commandButton id="btnConfirmar"  value="OK" onclick="dlg.hide();"/>
+                </p:dialog>
+            </h:form>
+            <p:tabView effect="opacity" effectDuration="normal">
+                <p:tab title="Pesquisar">
+                    <div id="campoPesquisar">
+                        <h:form id="usuarioAction" >
+                            <p:fieldset legend="Filtros da Pesquisa">
+                                <label id="usrNome2">Nome:
+                                    <p:focus for="usrNome2" />
+                                    <p:inputText id="usrNome2" styleClass="usrNome2" value="#{usuarioAction.usrNome}" />
+                                </label>
+                                <label id="usrLogin2">Login:
+                                    <p:inputText id="usrLogin2" styleClass="usrLogin2" label="login:" value="#{usuarioAction.usrLogin}" />
+                                </label>
+                                <label id="usrSts2">Status:
+                                    <p:selectOneRadio id="usrSts2" styleClass="usrSts2" label="Status:" value="#{usuarioAction.usrSts}" >
+                                        <f:selectItem itemLabel="Ativo" itemValue="true"  />
+                                        <f:selectItem itemLabel="Inativo" itemValue="false" />
+                                    </p:selectOneRadio>
+                                </label>
+                                <label id="pulaLinha"></label>
+                                <label id="btnPesquisar">
+                                    <p:commandButton ajax="true" title="Pesquisar" update="dados" id="pesquisar" value="Pesquisar" styleClass="btnPesquisar" actionListener="#{usuarioAction.select}" ></p:commandButton>
+                                </label>
+                            </p:fieldset>
+                            <p:separator styleClass="linha" />
+                            <p:fieldset styleClass="resultados" legend="Resultados">
+                                <p:dataTable emptyMessage="Nenhum Dado encontrado" selection="#{usuarioAction.selectedUsuario}" id="dados" var="result" value="#{usuarioAction.dataTable}"
+                                             rows="7" paginator="true" selectionMode="single" >
+                                    <p:column sortBy="#{result.usrNome}" sortFunction="sortByText">
+                                        <f:facet name="header">
+                                            <h:outputText value="Nome" />
+                                        </f:facet>
+                                        <h:outputText value="#{result.usrNome}" />
+                                    </p:column>
+                                    <p:column sortBy="#{result.usrLogin}">
+                                        <f:facet name="header">
+                                            Login
+                                        </f:facet>
+                                        <h:outputText value="#{result.usrLogin}" />
+                                    </p:column>
+                                    <p:column sortBy="#{result.usrSts}">
+                                        <f:facet name="header">
+                                            Status
+                                        </f:facet>
+                                        <h:outputText value="#{result.usrSts}" />
+                                    </p:column>
+                                    <p:column sortBy="#{result.usrTipo}">
+                                        <f:facet name="header">
+                                            Tipo
+                                        </f:facet>
+                                        <h:outputText value="#{result.usrTipo}" />
+                                    </p:column>
+                                    <p:column>
+                                        <f:facet name="header">
+                                            Alterar
+                                        </f:facet>
+                                        <p:commandButton oncomplete="" image="ui-icon ui-icon-pencil" title="Alterar">
+                                            <f:setPropertyActionListener value="#{result}" target="#{usuarioAction.bean}" />
+                                        </p:commandButton>
+                                    </p:column>
+                                    <p:column>
+                                        <f:facet name="header">
+                                            Excluir
+                                        </f:facet>
+                                        <p:commandButton oncomplete="confirmation.show()" image="ui-icon ui-icon-close" title="Excluir">
+                                            <f:setPropertyActionListener value="#{result}" target="#{usuarioAction.bean}"  />
+                                        </p:commandButton>
+                                    </p:column>
+                                </p:dataTable>
+                            </p:fieldset>
+                        </h:form>
+                    </div>
+                </p:tab>
+                <p:tab id="cadastrar" title="Cadastrar">
+                    <div id="campoCadastrar">
+                        <h:form id="usuarioAction2" >
+                            <label id="usrNome">Nome:*
+                                <p:focus for="usrNome" />
+                                <p:inputText id="usrNome" styleClass="usrNome" value="#{usuarioAction.usrNome}" required="true" requiredMessage="Digite o nome de usuário" />
+                            </label>
+                            <label id="usrLogin">Login:*
+                                <p:inputText id="usrLogin" styleClass="usrLogin" label="login:" autocomplete="false" value="#{usuarioAction.usrLogin}" required="true" requiredMessage="Digite o login de usuário" />
+                            </label>
+                            <label id="usrSenha">Senha:*
+                                <p:password id="usrSenha"  styleClass="usrSenha" required="true" autocomplete="false" value="#{usuarioAction.usrSenha}" requiredMessage="Digite a senha" promptLabel="Digite a senha" weakLabel="Senha fraca" goodLabel="Senha razoável" strongLabel="Senha forte" ></p:password>
+                            </label>
+                            <label id="usrSenha2">Repita a Senha:*
+                                <p:password id="usrSenha2" styleClass="usrSenha2" required="true" requiredMessage="Repita a senha" value="#{usuarioAction.usrSenha2}" promptLabel="Repita a senha" weakLabel="Senha fraca" goodLabel="Senha razoável" strongLabel="Senha forte" ></p:password>
+                            </label>
+                            <label id="usrTipo">Tipo:*</label>
+                            <p:selectOneMenu id="usrTipo" label="Tipo" value="#{usuarioAction.usrTipo}" requiredMessage="Escolha o Tipo de usuário" required="true" >
+                                <f:selectItem itemLabel="Gerente" itemValue="G" />
+                                <f:selectItem itemLabel="Usuário" itemValue="U" />
+                            </p:selectOneMenu>
+                            <label id="usrSts">Status:*
+                                <p:selectOneRadio id="usrSts" styleClass="usrSts" label="Status:" value="#{usuarioAction.usrSts}" required="true" requiredMessage="Escolha o status do usuário" >
+                                    <f:selectItem itemLabel="Ativo" itemValue="true"  />
+                                    <f:selectItem itemLabel="Inativo" itemValue="false" />
+                                </p:selectOneRadio>
+                            </label>
+                            <p:separator styleClass="linha" />
+                            <label id="btnSalvar">
+                                <p:commandButton ajax="true" oncomplete="validaUsuario(xhr, status, args)" update="messages" title="Salvar" id="salvar" value="Salvar" styleClass="btnSalvar" actionListener="#{usuarioAction.save}" ></p:commandButton>
+                            </label>
+                            <label id="btnLimpar">
+                                <p:commandButton  onclick="limpar()" title="Limpar" id="limpar" value="Limpar" styleClass="btnLimpar" ></p:commandButton>
+                            </label>
+                        </h:form>
+                    </div>
+                </p:tab>
+            </p:tabView>
+        </ui:define>
+    </ui:composition>
+</html>
+

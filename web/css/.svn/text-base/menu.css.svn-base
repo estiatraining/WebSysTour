@@ -1,0 +1,19 @@
+label {
+    display: block;
+    width: 150px;
+    text-align: left;
+    float: left;
+    margin-left: 5px;
+    padding-right: 20px;
+}
+.component {
+    margin-bottom: 5px;
+}
+input {
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+}
+br {
+    clear: left;
+}

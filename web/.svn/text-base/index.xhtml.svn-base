@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.prime.com.tr/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="css/default.css" rel="stylesheet" type="text/css" />
+        <link href="css/index.css" rel="stylesheet" type="text/css" />
+        <script language="javascript" src="jScript/default.js"></script>
+        <script language="javascript" src="jScript/index.js"></script>               
+        <title>--WebSysTour--</title>
+    </h:head>
+    <body id="paginaIndex" onload="limpar()">
+        <div id="estrutura">
+            <h:form id="validarUsuario" >                
+                <p:tooltip global="true" showEffect="slide" hideEffect="slide" showEffectLength="100" hideEffectLength="1000" />
+                <p:ajaxStatus onstart="statusDialog.show();" onsuccess="statusDialog.hide();"/>
+                <p:dialog modal="true" widgetVar="statusDialog" header="Status"
+                          draggable="false" closable="false">
+                    Processando  <p:graphicImage value="img/ajaxloadingbar.gif" />
+                </p:dialog>
+                <p:dialog  header="Atenção" id="confirm" styleClass="confirm" widgetVar="dlg" modal="true" showEffect="bounce" hideEffect="explode"  >
+                    <p:messages autoUpdate="true" id="messages" />
+                    <p:commandButton id="btnConfirmar"  value="OK" onclick="dlg.hide();"/>
+                </p:dialog>
+                <p:dialog modal="true" widgetVar="acaoRedirect" header="Aguarde"
+                          draggable="false" closable="false">
+                    Logando...
+                </p:dialog>
+                <p:panel id="panel" style="margin: 5px; width: 300px;" header="Login" >
+                    <label class="empresa" ></label>
+                        Empresa: *
+                        <p:selectOneMenu immediate="true" id="empresa" label="Empresa" requiredMessage="Escolha a Empresa" required="true" >
+                            <f:selectItem itemLabel="WEBinovaTI" itemValue="0" />
+                            <f:selectItem itemLabel="WEBinovaTI 2" itemValue="1" />
+                        </p:selectOneMenu>                    
+                    <label class="usrLogin">
+                        Login: *
+                        <p:inputText id="usrLogin" label="Login" required="true" value="#{validaUsuarioAction.bean.usrLogin}" requiredMessage="Digite o Login!" >
+                            <f:validateLength minimum="3" />
+                        </p:inputText>
+                    </label>
+                    <label class="usrSenha">
+                        Senha: *
+                        <p:password  id="usrSenha"  label="Senha" required="true"  requiredMessage="Digite a Senha!" onshow="fadein" value="#{validaUsuarioAction.bean.usrSenha}" style="margin-top: 15px;" feedback="false" >
+                            <f:validateLength minimum="3" />
+                        </p:password>
+                    </label>
+                        <p:commandButton type="submit" ajax="true" value="Logar" oncomplete="validaLogin(xhr, status, args)" actionListener="#{validaUsuarioAction.validarUsuario}" update="messages" title="Clique aqui para logar!" style="margin-top: 15px;" />
+                        <p:commandButton ajax="false" type="buttom" value="Recuperar senha" title="Clique aqui para recuperar a sua senha!" style="margin-top: 15px; float: right;" />
+                </p:panel>
+            </h:form>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,107 @@
+/* 
+    Document   : usuario
+    Created on : 09/05/2011, 22:03:14
+    Author     : Destroyer
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+#campoPesquisar{
+    display: block;
+    width: 100%;
+    height: 517px;
+}
+label{
+    display: block;
+    float: left;       
+}
+#pulaLinha{
+    width: 100%;
+}
+#campoPesquisar #usrNome2{
+    width: 250px;
+    margin-left: 0px;
+}
+#campoPesquisar #usrNome2 .usrNome2{
+    width: 250px;
+}
+#campoPesquisar #usrLogin2{
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#campoPesquisar #usrLogin2 .usrLogin2{
+    width: 150px;
+}
+#campoPesquisar #btnPesquisar{
+    width: 150px;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+#campoPesquisar .ui-datatable-data{
+    font-weight: bold;
+    text-align: center;
+}
+#campoCadastrar{
+    display: block;
+    width: 100%;
+    height: 517px;
+}
+#campoCadastrar #usrNome{
+    width: 250px;
+    margin-left: 0px;
+}
+#campoCadastrar #usrNome .usrNome{
+    width: 250px;
+}
+#campoCadastrar #usrLogin{
+    width: 150px;
+    margin-left: 20px;
+}
+#campoCadastrar #usrLogin .usrLogin{
+    width: 150px;
+}
+#campoCadastrar #usrSenha{
+    width: 150px;
+    margin-left: 20px;
+}
+#campoCadastrar #usrSenha .usrSenha{
+    width: 150px;
+}
+#campoCadastrar #usrSenha2{
+    width: 150px;
+    margin-left: 20px;
+}
+#campoCadastrar #usrSenha2 .usrSenha2{
+    width: 150px;
+}
+#campoCadastrar #usrSts{
+    width: 150px;
+}
+#campoCadastrar #usrTipo{
+    width: 150px;
+    margin-left: 20px;
+}
+#campoCadastrar ui-corner-all{
+    width: 150px;
+}
+#campoCadastrar .ui-selectonemenu, .ui-selectonemenu-trigger{
+    width: 150px;
+    margin-left: 20px;
+}
+#campoCadastrar .ui-selectonemenu-label{
+    width: 103px;
+}
+#campoCadastrar #btnLimpar{
+    margin-left: 20px;
+}
+.linha{
+    margin: 10px 0 10px 0;
+    width: 100%;
+    float: left;
+}
+
